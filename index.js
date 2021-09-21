@@ -26,7 +26,7 @@ function CalculaIMC(altura,peso){
 
 //Coloca a div em uma variável e esconde seu contaúdo
 let hidden = document.querySelector("#hidden");
-hidden.style.display = "block";
+hidden.style.display = "none";
 
 const botao = document.querySelector("#botão");
 //Condicionando ações para ocorrer após pressionar o botão.
