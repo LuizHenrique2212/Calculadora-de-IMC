@@ -15,8 +15,8 @@ body{
 
 header#cabeçalho{
     min-width: fit-content;
-    margin-top: 50px;
-    margin-bottom: 20px;
+    margin-top: 10em;
+    margin-bottom: 2em;
     color: white;
     text-shadow: black 0.1em 0.1em 0.2em;
 }
@@ -24,19 +24,19 @@ header#cabeçalho{
 main#corpo{
     background-color: white;
     color: black;
-    height: 350px;
+    height: 22em;
     width: 60vw;
-    max-width: 300px;
+    max-width: 19em;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
     border-radius: 15px;
-    box-shadow: 30px 30px 60px rgba(0, 0, 0, 0.5);
+    box-shadow: 30px 30px 60px rgba(0, 0, 0, 0.7);
 }
 
 form{
-    height: 150px;
+    height: 10em;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -46,9 +46,9 @@ form{
 input{
     outline: none;
     width: 50vw;
-    max-width: 250px;
-    height: 30px;
-    margin: 15px; 
+    max-width: 16em;
+    height: 2em;
+    margin: 1em; 
     border-bottom: solid 0.5px black;
 }
 
@@ -68,15 +68,18 @@ input::placeholder{
 }
 
 button{
-    padding: 0.5rem;
+    padding-top: 0.7em;
+    padding-bottom: 0.7em;
+    padding-left: 2em;
+    padding-right: 2em;
     cursor: pointer;
     width: 45vw;
-    max-width: 180px;
+    max-width: 9.5em;
     min-width: fit-content;
-    font-size: 1.3rem;
+    font-size: 1.4em;
     background: rgb(100, 0, 139);
     color: white;
-    font-weight: 800;
+    font-weight: 500;
     border-radius: 5px;
 }
 
@@ -84,17 +87,16 @@ footer{
     width: 80vw;
     height:500px;
     max-width: 600px;
-
 }
 
 div#hidden{
     text-align: center;
-    transition-duration: 1s;
+    animation: deslizar 1s;
+    margin-top: 7em;
 }
 
 div#topo_tabela{
-    margin-top: 50px;
-    margin-bottom: 20px;
+    margin-bottom: 1em;
     width: 80vw;
     max-width: 600px;
     display: inline-flex;
@@ -103,11 +105,9 @@ div#topo_tabela{
 }
 
 @keyframes deslizar{
-    0%   { margin-top: 0px; }
-    25%   { margin-top: 25px; }
-    50%  { margin-top: 50px; }
-    75%   { margin-top: 75px; }
-    100% { margin-top: 0px; }
+    0% {transform: translatey(10em);}
+
+    100% {transform: translateX(0);}
 }
 
 table#tabela{
@@ -123,23 +123,36 @@ table#tabela{
 
 table#tabela th {
     border: 2px solid black;
-    font-size: 1.5rem;
+    font-size: 1.5em;
     padding: 5px;
 }
  
 table#tabela td {
     border: 2px solid black;
-    font-size: 1rem;
+    font-size: 1em;
     padding: 5px;
 }
 
+.autor{
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
 a#autor{
-    margin-bottom: 20px;
-    color:gold;
+    color:#ffff;
     font-style:normal;
-    cursor: pointer;
+    cursor: pointer; 
+    box-shadow:30px 30px 60px rgba(0, 0, 0, 0.5);
 }
 
 a:link{
     text-decoration: none;
+}
+
+@media screen and (max-width:500px){
+    button{
+        padding-left: 1.3em;
+        padding-right: 1.3em;
+    }
+    
 }
