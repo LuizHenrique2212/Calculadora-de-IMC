@@ -11,12 +11,13 @@ body{
     flex-direction: column;
     align-items: center;  
     background-image:linear-gradient(to right, magenta, cyan);
+    padding-bottom: 70px;
 }
 
 header#cabeçalho{
     min-width: fit-content;
-    margin-top: 10em;
-    margin-bottom: 2em;
+    margin-top: 3em;
+    margin-bottom: 1em;
     color: white;
     text-shadow: black 0.1em 0.1em 0.2em;
 }
@@ -92,7 +93,7 @@ footer{
 div#hidden{
     text-align: center;
     animation: deslizar 1s;
-    margin-top: 7em;
+    margin-top: 3em;
 }
 
 div#topo_tabela{
@@ -135,18 +136,22 @@ table#tabela td {
 
 .autor{
     margin-top: 3em;
-    margin-bottom: 3em;
 }
 
 a#autor{
     color:#ffff;
     font-style:normal;
-    cursor: pointer; 
-    box-shadow:30px 30px 60px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    opacity: 0.5;
 }
 
 a:link{
     text-decoration: none;
+}
+
+a#autor:hover{
+    opacity: 1;
+    font-weight: bolder;
 }
 
 @media screen and (max-width:500px){
